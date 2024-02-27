@@ -9,11 +9,10 @@
   
   <script>
   export default {
-    name: 'Header'
+    name: 'AppHeader' // Change component name to avoid reserved name conflicts
   }
   </script>
   
   <style scoped>
   /* Add custom styles for the header */
   </style>
-  

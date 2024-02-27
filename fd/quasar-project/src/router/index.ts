@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
-import HomePage from './pages/HomePage.vue'
-import DestinationDetailsPage from './pages/DestinationDetailsPage.vue'
-import BookingPage from './pages/BookingPage.vue'
+import HomePage from '../pages/HomePage.vue'
+import DestinationDetailsPage from '../pages/DestinationDetailsPage.vue'
+import BookingPage from '../pages/BookingPage.vue'
 
 const routes: RouteRecordRaw[] = [
   { path: '/', component: HomePage },

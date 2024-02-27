@@ -1,25 +1,25 @@
 <template>
     <div>
-      <Header />
+      <AppHeader />
       <Carousel :slides="carouselSlides" />
       <Sections />
-      <Footer />
+      <AppFooter />
     </div>
   </template>
   
   <script>
-  import Header from 'src/components/Header.vue'
-  import Carousel from 'src/components/Carousel.vue'
-  import Sections from 'src/components/Sections.vue'
-  import Footer from 'src/components/Footer.vue'
+  import AppHeader from '@/components/Header.vue'
+  import Carousel from '@/components/Carousel.vue'
+  import Sections from '@/components/Sections.vue'
+  import AppFooter from '@/components/Footer.vue'
   
   export default {
     name: 'HomePage',
     components: {
-      Header,
+      AppHeader,
       Carousel,
       Sections,
-      Footer
+      AppFooter
     },
     data() {
       return {
@@ -32,4 +32,3 @@
   <style>
   /* Add custom styles for the home page */
   </style>
-  

@@ -1,20 +1,20 @@
 <template>
     <div>
-      <Header />
+      <AppHeader />
       <!-- Add content for destination details -->
-      <Footer />
+      <AppFooter />
     </div>
   </template>
   
   <script>
-  import Header from 'src/components/Header.vue'
-  import Footer from 'src/components/Footer.vue'
+  import AppHeader from '@/components/Header.vue'
+  import AppFooter from '@/components/Footer.vue'
   
   export default {
     name: 'DestinationDetailsPage',
     components: {
-      Header,
-      Footer
+      AppHeader,
+      AppFooter
     }
   }
   </script>
@@ -22,4 +22,3 @@
   <style>
   /* Add custom styles for the destination details page */
   </style>
-  

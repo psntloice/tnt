@@ -6,7 +6,7 @@
   
   <script>
   export default {
-    name: 'Footer'
+    name: 'AppFooter' // Change component name to avoid reserved name conflicts
   }
   </script>
   
