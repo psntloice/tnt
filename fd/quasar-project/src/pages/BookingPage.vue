@@ -7,8 +7,8 @@
   </template>
   
   <script>
-  import AppHeader from 'src/components/Header.vue'
-  import AppFooter from 'src/components/Footer.vue'
+  import AppHeader from 'src/components/AppHeader.vue'
+  import AppFooter from 'src/components/AppFooter.vue'
   
   export default {
     name: 'BookingPage',

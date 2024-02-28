@@ -1,34 +1,26 @@
 <template>
-    <div>
-      <AppHeader />
-      <Carousel :slides="carouselSlides" />
-      <Sections />
-      <AppFooter />
-    </div>
-  </template>
+  <div>
+    <AppHeader  />
+    <AppCarousel />
+    <AppSections />
+    <AppFooter />
+  </div>
+</template>
+
+<script>
+import AppHeader from '../components/AppHeader.vue'
+import AppCarousel from '../components/AppCarousel.vue'
+import AppSections from '../components/AppSections.vue'
+import AppFooter from '../components/AppFooter.vue'
+
+export default {
+  name: 'HomePage',
+  components: {
+    AppHeader,
+    AppCarousel,
+    AppSections,
+    AppFooter
+  },
   
-  <script>
-  import AppHeader from '@/components/Header.vue'
-  import Carousel from '@/components/Carousel.vue'
-  import Sections from '@/components/Sections.vue'
-  import AppFooter from '@/components/Footer.vue'
-  
-  export default {
-    name: 'HomePage',
-    components: {
-      AppHeader,
-      Carousel,
-      Sections,
-      AppFooter
-    },
-    data() {
-      return {
-        carouselSlides: [/* array of slide data */]
-      }
-    }
-  }
-  </script>
-  
-  <style>
-  /* Add custom styles for the home page */
-  </style>
+}
+</script>
