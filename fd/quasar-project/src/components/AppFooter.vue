@@ -17,6 +17,8 @@ export default defineComponent({
 <style scoped>
 .app-footer {
   /* Add custom styles for the footer */
-  padding: auto;
+  background-color: transparent; /* Set background color to transparent */
+color:black;
+text-align: center;
 }
 </style>
