@@ -1,0 +1,29 @@
+{
+  "name": "travel-explorer",
+  "version": "0.0.1",
+  "description": "modern tours and travel application",
+  "author": "Qrevv Softwares",
+  "private": true,
+  "type": "module",
+  "module": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@quasar/extras": "1.16.9",
+    "quasar": "2.14.5",
+    "vue": "3.4.20",
+    "vue-router": "4.3.0",
+    "compression": "^1.7.4",
+    "express": "^4.17.3",
+    "serialize-javascript": "^6.0.0"
+  },
+  "engines": {
+    "node": "^24 || ^22 || ^20 || ^18",
+    "npm": ">= 6.13.4",
+    "yarn": ">= 1.21.1"
+  },
+  "quasar": {
+    "ssr": true
+  }
+}
