@@ -1,0 +1,235 @@
+one with many sections
+
+
+
+
+<template>
+    <div class="app-sections">
+      <!-- Section 1 -->
+      <div class="section">
+        <h2>S1</h2>
+        <p>Welcome.</p>
+      </div>
+  
+      <!-- Section 2 -->
+      <div class="section">
+        <h2>S2</h2>
+        <p>View.</p>
+      </div>
+  
+      <!-- Showcase tours using cards -->
+      <div class="section">
+        <h2>Tours</h2>
+        <q-card-group>
+          <q-card v-for="(tour, index) in tours" :key="index" class="tour-card">
+            <q-card-section class="q-pa-md">
+              <q-img :src="tour.imageSrc" :alt="tour.title" />
+              <q-card-title>{{ tour.title }}</q-card-title>
+              <q-card-main>{{ tour.description }}</q-card-main>
+              <q-card-separator />
+              <q-card-actions>
+                <span class="text-accent">Price: {{ tour.price }}</span>
+                <!-- Add more actions as needed -->
+              </q-card-actions>
+            </q-card-section>
+          </q-card>
+        </q-card-group>
+      </div>
+    </div>
+  </template>
+  
+  <script lang="ts">
+  import { defineComponent } from 'vue';
+  
+  interface Tour {
+    imageSrc: string;
+    title: string;
+    description: string;
+    price: string;
+  }
+  
+  export default defineComponent({
+    name: 'InterNSections',
+    data() {
+      return {
+        tours: [
+          { imageSrc: '/images/t1.jpg', title: 'Tour 1', description: 'Description of Tour 1', price: '$100' },
+          { imageSrc: '/images/t2.jpg', title: 'Tour 2', description: 'Description of Tour 2', price: '$120' },
+          // Add more tours as needed
+        ] as Tour[]
+      };
+    }
+  });
+  </script>
+  
+  <style scoped>
+  .app-sections {
+    /* Styles for the entire component */
+    background-image: url('/images/t3.jpg');
+    /* Adjust background properties as needed */
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .section {
+    /* Styles for each section */
+    margin-bottom: 20px;
+  }
+  
+  .tour-card {
+    /* Styles for tour cards */
+    max-width: 300px; /* Adjust card width as needed */
+  }
+  </style>
+  
+
+
+  one with images. when you remove the styling 
+  itachange effects
+
+  <template>
+  <div>
+    <h2>Local Destinations</h2>
+    <div class="destination-list">
+      <div v-for="(destination, index) in localDestinations" :key="index" class="destination">
+        <img :src="`/images/${destination.image}`" :alt="destination.alt" class="destination-image">
+        <h3 class="destination-title">{{ destination.title }}</h3>
+        <p class="destination-description">{{ destination.description }}</p>
+      </div>
+    </div>
+    <!-- <router-link :to="{ name: 'DestinationDetailsPage' }" class="more-link">More</router-link> -->
+  </div>
+</template>
+
+<script lang="ts">
+import { defineComponent } from 'vue';
+
+export default defineComponent({
+  name: 'LocalDestinations',
+  data() {
+    return {
+      localDestinations: [
+        {
+          title: 'Destination 1',
+          image: 't1.jpg',
+          alt: 'Destination 1',
+          description: 'Description of destination 1.',
+        },
+        {
+          title: 'Destination 2',
+          image: 't2.jpg',
+          alt: 'Destination 2',
+          description: 'Description of destination 2.',
+        },
+        // Add more destinations as needed
+      ],
+    };
+  },
+});
+</script>
+
+<style scoped>
+.destination-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.destination {
+  width: calc(50% - 10px); /* Two destinations per row with margin */
+  margin: 0 5px;
+  margin-bottom: 20px; /* Spacing between destinations */
+}
+
+.destination-image {
+  width: 100%; /* Make sure the image fills the container */
+}
+
+.destination-info {
+  padding: 10px;
+}
+
+/* Adjust styles as needed */
+</style>
+
+
+legit for a destibbations page 
+
+<template>
+    <div class="app-sections">
+      <!-- Section 1 -->
+      <div class="section">
+        <h2>S1</h2>
+        <p>Welcome.</p>
+      </div>
+  
+      <!-- Section 2 -->
+      <div class="section">
+        <h2>S2</h2>
+        <p>View.</p>
+      </div>
+  
+      <!-- Showcase tours using cards -->
+      <div class="section">
+        <h2>Tours</h2>
+        <q-card-group>
+          <q-card v-for="(tour, index) in tours" :key="index" class="tour-card">
+            <q-card-section class="q-pa-md">
+              <q-img :src="tour.imageSrc" :alt="tour.title" />
+              <q-card-title>{{ tour.title }}</q-card-title>
+              <q-card-main>{{ tour.description }}</q-card-main>
+              <q-card-separator />
+              <q-card-actions>
+                <span class="text-accent">Price: {{ tour.price }}</span>
+                <!-- Add more actions as needed -->
+              </q-card-actions>
+            </q-card-section>
+          </q-card>
+        </q-card-group>
+      </div>
+    </div>
+  </template>
+  
+  <script lang="ts">
+  import { defineComponent } from 'vue';
+  
+  interface Tour {
+    imageSrc: string;
+    title: string;
+    description: string;
+    price: string;
+  }
+  
+  export default defineComponent({
+    name: 'InterNSections',
+    data() {
+      return {
+        tours: [
+          { imageSrc: '/images/t1.jpg', title: 'Tour 1', description: 'Description of Tour 1', price: '$100' },
+          { imageSrc: '/images/t2.jpg', title: 'Tour 2', description: 'Description of Tour 2', price: '$120' },
+          // Add more tours as needed
+        ] as Tour[]
+      };
+    }
+  });
+  </script>
+  
+  <style scoped>
+  .app-sections {
+    /* Styles for the entire component */
+    background-image: url('/images/t3.jpg');
+    /* Adjust background properties as needed */
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .section {
+    /* Styles for each section */
+    margin-bottom: 20px;
+  }
+  
+  .tour-card {
+    /* Styles for tour cards */
+    max-width: 300px; /* Adjust card width as needed */
+  }
+  </style>
+  

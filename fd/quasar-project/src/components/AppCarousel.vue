@@ -1,3 +1,8 @@
+<!-- Hero Section with Carousel: Instead of a static hero image, you can use the carousel to
+ display a rotating selection of high-quality images featuring various travel destinations,
+  tour packages, or adventure activities. This dynamic element can capture users' attention 
+  and create an immersive experience right from the homepage. -->
+
 <template>
   <div class="qpa">
     <q-carousel
