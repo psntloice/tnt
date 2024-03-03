@@ -1,12 +1,24 @@
 <template>
-  <div>
-    <AppHeader  />
+<div class="home-page" id="app">   
+   <AppHeader  />
     <AppCarousel />
+    <div class="content">
+
+    <HighlightTours />
+    <HotDealsSection />
+    <IntroSection />
     <AppFeatures />
     <LocalSections />
     <InterNSections />
-    <AppSections />
-    <AppFooter />
+    <TravelStories />
+<UpComingEvents />
+<OurPackagesSection />
+<TravelGuidesSection />
+<BookWithUsSection />
+<AppFooter />
+
+</div>
+
   </div>
 </template>
 
@@ -16,8 +28,15 @@ import AppCarousel from '../components/AppCarousel.vue'
 import LocalSections from '../components/LocalSections.vue'
 import InterNSections from '../components/InterNSections.vue'
 import AppFooter from '../components/AppFooter.vue'
-import AppSections from '../components/AppSections.vue'
 import AppFeatures from '../components/AppFeatures.vue'
+import HighlightTours from '../components/HighlightTours.vue'
+import TravelStories from '../components/TravelStories.vue'
+import UpComingEvents from '../components/UpComingEvents.vue'
+import IntroSection from '../components/IntroSection.vue'
+import BookWithUsSection from '../components/BookWithUsSection.vue'
+import HotDealsSection from '../components/HotDealsSection.vue'
+import OurPackagesSection from '../components/OurPackagesSection.vue'
+import TravelGuidesSection from '../components/TravelGuidesSection.vue'
 
 export default {
   name: 'HomePage',
@@ -25,12 +44,37 @@ export default {
  
     AppHeader,
     AppCarousel,
+    HighlightTours,
     AppFeatures,
     LocalSections ,
     InterNSections,
-    AppSections,
+    TravelStories,
+    IntroSection,
+    BookWithUsSection,
+UpComingEvents,
+OurPackagesSection,
+HotDealsSection,
+TravelGuidesSection,
     AppFooter
   },
   
 }
 </script>
+<style scoped>
+.home-page {
+  background-color: #f2f0eb; /* Set the background color to your desired color */
+}
+#app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.content {
+  flex: 1; /* Make the content area flex-grow to fill remaining space */
+  /* display: flex; */
+  margin-left: 20px;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px; /* Add padding to the content area */
+}
+</style>

@@ -7,7 +7,7 @@
 
 <template>
     <div class="features">
-      <h2>Key Features</h2>
+      <h2>Our Services</h2>
       <div class="feature-list">
         <div v-for="(feature, index) in features" :key="index" class="feature">
           <q-icon :name="feature.icon" size="50px" class="feature-icon" />

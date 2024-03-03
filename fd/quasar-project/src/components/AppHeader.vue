@@ -65,6 +65,7 @@ searchActive: false
   background-color: transparent; /* Set background color to transparent */
   text-align: center;
 color: rgb(13, 12, 15);
+height: 10vh;
 }
 
 .search-container {

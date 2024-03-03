@@ -6,6 +6,7 @@
 <template>
   <div class="qpa">
     <q-carousel
+    class="hcarous"
       swipeable
       animated
       v-model="slide"
@@ -26,7 +27,7 @@ import { ref } from 'vue'
 export default {
   setup () {
     return {
-      slide: ref(1)
+      slide: ref(2)
     }
   }
 }
@@ -36,6 +37,9 @@ export default {
 .qpa {
   /* Add custom styles for the header */
   width: 100%; /* Full width */
-  height: 95%; /* 70% of viewport height */  
+  height: 95vh; /* 70% of viewport height */  
+}
+.hcarous{
+  height:100%;
 }
 </style>
