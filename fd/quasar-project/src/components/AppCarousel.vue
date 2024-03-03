@@ -36,6 +36,7 @@ export default {
 .hcarous{
   width: 100%; /* Full width */
   height: 95vh;
+  display: absolute;
 top: 0;
 }
 </style>

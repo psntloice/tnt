@@ -1,6 +1,7 @@
 <template>
-<div class="home-page" id="app">   
-   <AppHeader  />
+  <div class="q-page-container q-nopadding" :class="pageContainerClasses">
+  <q-page class="home-page" id="app">
+
     <AppCarousel />
     <div class="content">
 
@@ -15,19 +16,18 @@
 <OurPackagesSection />
 <TravelGuidesSection />
 <BookWithUsSection />
-<AppFooter />
 
 </div>
 
-  </div>
+</q-page>
+</div>
+
 </template>
 
 <script>
-import AppHeader from '../components/AppHeader.vue'
 import AppCarousel from '../components/AppCarousel.vue'
 import LocalSections from '../components/LocalSections.vue'
 import InterNSections from '../components/InterNSections.vue'
-import AppFooter from '../components/AppFooter.vue'
 import AppFeatures from '../components/AppFeatures.vue'
 import HighlightTours from '../components/HighlightTours.vue'
 import TravelStories from '../components/TravelStories.vue'
@@ -40,9 +40,9 @@ import TravelGuidesSection from '../components/TravelGuidesSection.vue'
 
 export default {
   name: 'HomePage',
+  layout: 'MainLayout',
   components: {
  
-    AppHeader,
     AppCarousel,
     HighlightTours,
     AppFeatures,
@@ -55,14 +55,27 @@ UpComingEvents,
 OurPackagesSection,
 HotDealsSection,
 TravelGuidesSection,
-    AppFooter
   },
-  
+  data() {
+    return {
+      pageContainerClasses: ['home-page-padding'] // Add any other classes if needed
+    }
+  }
 }
 </script>
 <style scoped>
+.home-page-padding {
+  padding-top: 3px;
+}
+
+/* Override the padding for smaller screens */
+/* Adjust the breakpoint (max-width) and padding value as needed */
+.q-page-container.home-page-padding.q-layout-md .q-page {
+  padding-top: 1px;
+}
 .home-page {
   background-color: #f2f0eb; /* Set the background color to your desired color */
+padding-top: 0;
 }
 #app {
   display: flex;

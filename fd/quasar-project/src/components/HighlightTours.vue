@@ -1,7 +1,9 @@
 <template>
     <div class="highlightr">
       <h2 class="highlight-heading">Highlight Tours</h2>
-      <q-card-group class="q-mb-md" style="display: flex; flex-wrap: wrap;">
+      <!-- <q-card-group class="q-mb-md" style="display: flex; flex-wrap: wrap;"> -->
+        <q-card-group style="display: flex; flex-wrap: wrap;">
+
         <!-- Loop through your tour highlights -->
         <q-card
           v-for="(tour, index) in tourHighlights"
