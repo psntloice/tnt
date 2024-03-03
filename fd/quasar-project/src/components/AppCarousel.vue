@@ -4,7 +4,6 @@
   and create an immersive experience right from the homepage. -->
 
 <template>
-  <div class="qpa">
     <q-carousel
     class="hcarous"
       swipeable
@@ -18,7 +17,6 @@
       <q-carousel-slide :name="3" img-src="https://cdn.quasar.dev/img/parallax2.jpg" />
       <q-carousel-slide :name="4" img-src="https://cdn.quasar.dev/img/quasar.jpg" />
     </q-carousel>
-  </div>
 </template>
 
 <script>
@@ -34,12 +32,10 @@ export default {
 </script>
 
 <style scoped>
-.qpa {
-  /* Add custom styles for the header */
-  width: 100%; /* Full width */
-  height: 95vh; /* 70% of viewport height */  
-}
+
 .hcarous{
   height:100%;
+  width: 100%; /* Full width */
+  height: 95vh;
 }
 </style>
