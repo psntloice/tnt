@@ -66,6 +66,11 @@ searchActive: false
   text-align: center;
 color: rgb(13, 12, 15);
 height: 10vh;
+position: fixed; /* Fixed position ensures it stays on top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure the header is on top */
 }
 
 .search-container {

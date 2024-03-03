@@ -34,8 +34,8 @@ export default {
 <style scoped>
 
 .hcarous{
-  height:100%;
   width: 100%; /* Full width */
   height: 95vh;
+top: 0;
 }
 </style>
