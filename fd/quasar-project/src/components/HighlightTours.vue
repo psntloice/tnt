@@ -64,7 +64,7 @@
   
   .tour-card {
     max-width: 300px;
-    margin: 0 auto;
+    margin: 10px auto;
      /* height: 50%; */
   }
   

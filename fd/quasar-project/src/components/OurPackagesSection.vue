@@ -56,7 +56,7 @@
   
   .offer-card {
     max-width: 400px; /* Adjust maximum width of cards as needed */
-    margin: 0 auto;
+    margin: 10px auto;
   }
   
   .offer-card q-card-text {

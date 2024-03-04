@@ -49,9 +49,9 @@
   </script>
   
   <style scoped>
-  .features {
+  /* .features {
     margin-top: 50px;
-  }
+  } */
   h2{
     text-align: center;
   }

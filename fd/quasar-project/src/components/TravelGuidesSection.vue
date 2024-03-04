@@ -56,7 +56,7 @@ export default {
 
 .guide-card {
   max-width: 400px; /* Adjust maximum width of cards as needed */
-  margin: 0 auto;
+  margin: 10px auto;
 }
 
 .guide-card q-card-text {
