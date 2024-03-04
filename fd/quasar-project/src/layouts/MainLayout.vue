@@ -1,13 +1,14 @@
 <template>
   <q-layout view="lHh Lpr lFf" >
     <q-header class="app-header" elavated>
-      <q-toolbar class="tbar">
+      <q-toolbar class="tbar" id="mytbar">
       <q-btn flat dense icon="menu" color="white" @click="$emit('toggle-menu')" />
-      <q-toolbar-title >Instincts of Kenya</q-toolbar-title>
-     <div class="trs">
-      <q-btn flat dense label="Tours" @click="navigateTo('tours')" />
+      <q-toolbar-title id="mytbar">
+        <h3 style="font-weight: 800;  text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);">INSTINCTS OF KENYA</h3></q-toolbar-title>
+     <div class="trs" id="mytbar">
+      <q-btn flat dense label="Tours" @click="navigateTo('tours')" id="mytbar"/>
     </div> 
-      <div class="search-container">
+      <div class="search-container" id="mytbar">
         <q-input
         rounded outlined
         ref="searchInput"
@@ -79,7 +80,14 @@ searchActive: false
 
 <style scoped>
 .tbar{
-  font-size: 50px !important;
+  display: flex;
+  justify-content: center;
+   word-spacing: 20px;
+}
+#mytbar{
+  font-size: 20px !important;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  
 }
 .q-page-container {
     padding: 0 !important;
@@ -100,10 +108,11 @@ height: 25vh;
 .app-header {
   /* Add custom styles for the header */
   padding-top: 0px;
-  background-color: white; /* Set background color to transparent */
+  display: flex;
+  background-color: transparent; /* Set background color to transparent */
   text-align: center;
-color: rgb(13, 12, 15);
-height: 15vh;
+color: white;
+height: 13vh;
 position: fixed; /* Fixed position ensures it stays on top */
   top: 0;
   left: 0;

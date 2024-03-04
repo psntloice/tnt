@@ -31,6 +31,9 @@
     text-align: center;
     height: 65vh;
   }
+  .q-mt-md{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+  }
   
   .intro-section h2 {
     font-size: 2.5rem; /* Adjust font size as needed */
