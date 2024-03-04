@@ -1,10 +1,9 @@
 <template>
   <q-layout view="lHh Lpr lFf" >
     <q-header class="app-header" elavated>
-      
-      <q-toolbar>
+      <q-toolbar class="tbar">
       <q-btn flat dense icon="menu" color="white" @click="$emit('toggle-menu')" />
-      <q-toolbar-title>Instincts of Kenya</q-toolbar-title>
+      <q-toolbar-title >Instincts of Kenya</q-toolbar-title>
      <div class="trs">
       <q-btn flat dense label="Tours" @click="navigateTo('tours')" />
     </div> 
@@ -30,86 +29,21 @@
 
    
 
-    <q-page-container class="pct">
+    <q-page-container>
       <router-view />
     </q-page-container>
-    <!-- <q-footer elevated>
-        <q-toolbar>
-          <q-toolbar-title>Footer</q-toolbar-title>
-        </q-toolbar>
-      </q-footer> -->
+   
       <q-footer class="app-footer">
-    <div class="q-pa-md">
+    <!-- <div class="q-pa-md"> -->
+      <q-toolbar>
+          <q-toolbar-title>Instincts of Kenya</q-toolbar-title>
+        </q-toolbar>
       <div>&copy; 2024 Instincts of Kenya. All rights reserved.</div>
-    </div>
+    <!-- </div> -->
   </q-footer>
   </q-layout>
-  <!-- <q-layout>
-  ...
-  <q-page-container>
-    <q-page>
-      page content -->
-    <!-- </q-page>
-  </q-page-container>
-  ...
-</q-layout> -->
 </template>
 
-<!-- <script setup lang="ts">
-import { ref } from 'vue';
-import EssentialLink, { EssentialLinkProps } from 'components/EssentialLink.vue';
-
-const essentialLinks: EssentialLinkProps[] = [
-  {
-    title: 'Docs',
-    caption: 'quasar.dev',
-    icon: 'school',
-    link: 'https://quasar.dev'
-  },
-  {
-    title: 'Github',
-    caption: 'github.com/quasarframework',
-    icon: 'code',
-    link: 'https://github.com/quasarframework'
-  },
-  {
-    title: 'Discord Chat Channel',
-    caption: 'chat.quasar.dev',
-    icon: 'chat',
-    link: 'https://chat.quasar.dev'
-  },
-  {
-    title: 'Forum',
-    caption: 'forum.quasar.dev',
-    icon: 'record_voice_over',
-    link: 'https://forum.quasar.dev'
-  },
-  {
-    title: 'Twitter',
-    caption: '@quasarframework',
-    icon: 'rss_feed',
-    link: 'https://twitter.quasar.dev'
-  },
-  {
-    title: 'Facebook',
-    caption: '@QuasarFramework',
-    icon: 'public',
-    link: 'https://facebook.quasar.dev'
-  },
-  {
-    title: 'Quasar Awesome',
-    caption: 'Community Quasar projects',
-    icon: 'favorite',
-    link: 'https://awesome.quasar.dev'
-  }
-];
-
-const leftDrawerOpen = ref(false)
-
-function toggleLeftDrawer() {
-  leftDrawerOpen.value = !leftDrawerOpen.value
-}
-</script> -->
 
 <script lang="ts">
 import { defineComponent } from 'vue'
@@ -144,33 +78,37 @@ searchActive: false
 </script>
 
 <style scoped>
+.tbar{
+  font-size: 50px !important;
+}
 .q-page-container {
     padding: 0 !important;
 }
-.pct {
-  padding-top: 0px;
-}
+
 .app-footer {
   /* Add custom styles for the footer */
   background-color: #7c8487;
-/* background-color: transparent; */
-display: flex;
+  position: relative;
+/* display: flex; */
   color:black;
 text-align: center;
-height: 30vh;
+height: 25vh;
+}
+.trs{
+  font-size: 50px;
 }
 .app-header {
   /* Add custom styles for the header */
   padding-top: 0px;
-  background-color: transparent; /* Set background color to transparent */
+  background-color: white; /* Set background color to transparent */
   text-align: center;
 color: rgb(13, 12, 15);
-height: 10vh;
+height: 15vh;
 position: fixed; /* Fixed position ensures it stays on top */
   top: 0;
   left: 0;
-  width: 100%;
-  
+  width: 100%;  
+  font-size: 60px;
   z-index: 1000; /* Ensure the header is on top */
 }
 

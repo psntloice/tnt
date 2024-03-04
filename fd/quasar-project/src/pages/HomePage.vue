@@ -1,10 +1,7 @@
 <template>
-  <div class="q-page-container q-nopadding" :class="pageContainerClasses">
   <q-page class="home-page" id="app">
-
     <AppCarousel />
     <div class="content">
-
     <HighlightTours />
     <HotDealsSection />
     <IntroSection />
@@ -16,12 +13,8 @@
 <OurPackagesSection />
 <TravelGuidesSection />
 <BookWithUsSection />
-
 </div>
-
 </q-page>
-</div>
-
 </template>
 
 <script>
@@ -56,32 +49,20 @@ OurPackagesSection,
 HotDealsSection,
 TravelGuidesSection,
   },
-  data() {
-    return {
-      pageContainerClasses: ['home-page-padding'] // Add any other classes if needed
-    }
-  }
 }
 </script>
-<style scoped>
-.home-page-padding {
-  padding-top: 3px;
-}
 
-/* Override the padding for smaller screens */
-/* Adjust the breakpoint (max-width) and padding value as needed */
-.q-page-container.home-page-padding.q-layout-md .q-page {
-  padding-top: 1px;
-}
+<style scoped>
+
 .home-page {
   background-color: #f2f0eb; /* Set the background color to your desired color */
 padding-top: 0;
 }
-#app {
+/* #app {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-}
+} */
 .content {
   flex: 1; /* Make the content area flex-grow to fill remaining space */
   /* display: flex; */
