@@ -1,13 +1,15 @@
 <template>
   <q-layout view="lHh Lpr lFf" >
     <q-header class="app-header" elavated>
+      <div class="tbard">
       <q-toolbar class="tbar" id="mytbar">
       <q-btn flat dense icon="menu" color="white" @click="$emit('toggle-menu')" />
-      <q-toolbar-title id="mytbar">
-        <h3 style="font-weight: 800;  text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);">INSTINCTS OF KENYA</h3></q-toolbar-title>
-     <div class="trs" id="mytbar">
+      <q-toolbar-title class="theei" id="mytbar">
+        <h3 class="title">INSTINCTS OF KENYA</h3>
+            </q-toolbar-title>
+     <!-- <div class="trs" id="mytbar">
       <q-btn flat dense label="Tours" @click="navigateTo('tours')" id="mytbar"/>
-    </div> 
+    </div>  -->
       <div class="search-container" id="mytbar">
         <q-input
         rounded outlined
@@ -26,6 +28,8 @@
       </q-input>
     </div>
       </q-toolbar>
+    </div>
+
     </q-header>
 
    
@@ -78,11 +82,25 @@ searchActive: false
 })
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+/* Define header styles */
+.title {
+  font-weight: 800;
+  font-size: 4vw;
+  text-shadow: 0 0 2vw rgba(0, 0, 0, 0.8); /* Example using viewport units for responsiveness */
+}
+.theei{
+  width:90vw;
+}
+.tbard{
+  width: 100%;
+  display: flex;
+}
 .tbar{
   display: flex;
   justify-content: center;
    word-spacing: 20px;
+   padding: 0;
 }
 #mytbar{
   font-size: 20px !important;
@@ -124,6 +142,7 @@ position: fixed; /* Fixed position ensures it stays on top */
 .search-container {
   display: flex;
   flex-direction: row-reverse; 
+  width:15vh;
 }
 .search-bar {
   transition: width 0.3s ease; /* Smooth transition for width change */
