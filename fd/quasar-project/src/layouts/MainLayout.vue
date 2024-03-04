@@ -144,6 +144,9 @@ searchActive: false
 </script>
 
 <style scoped>
+.q-page-container {
+    padding: 0 !important;
+}
 .pct {
   padding-top: 0px;
 }
